@@ -10,4 +10,3 @@ spec:
       image: tutum/hello-world
       ports:
         - containerPort: 80
-  nodeName: ip-172-31-36-224

@@ -8,6 +8,5 @@ spec:
   type: NodePort
   ports:
   - port: 9200
-    protocol: TCP
   selector:
     component: elasticsearch

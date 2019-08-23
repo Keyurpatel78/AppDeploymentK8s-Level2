@@ -18,9 +18,7 @@ spec:
         - name: discovery.type
           value: single-node
         - name: ES_JAVA_OPTS
-          value: -Xms256m -Xmx512m
-        - name: bootstrap.memory_lock
-          value: "true"
+          value: -Xms512M -Xmx512M
         ports:
         - containerPort: 9200
           name: http
