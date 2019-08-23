@@ -1,0 +1,8 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: blue-ingress
+spec:
+  backend:
+    serviceName: blue-service
+    servicePort: 80

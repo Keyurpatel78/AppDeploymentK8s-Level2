@@ -1,0 +1,23 @@
+
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: Role
+metadata:
+  name: nginx-ingress-role
+rules:
+  - apiGroups:
+      - ""
+    resources:
+      - pods
+      - secrets
+      - configmaps
+    verbs:
+      - get
+      - create
+  - apiGroups:
+      - ""
+    resources:
+      - endpoints
+    verbs:
+      - get
+      - create
+      - update
